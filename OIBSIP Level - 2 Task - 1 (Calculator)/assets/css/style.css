@@ -1,0 +1,131 @@
+/* Google Fonts API */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+
+/* Reset with universal selector */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --purple: #aabfeb;
+  --dark: #1c2639;
+  --box: #cbd9f8;
+  --button: #232e46;
+}
+
+/* Styling for 360px devices to 991px devices */
+
+body {
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  padding: 1.5rem 0;
+  position: relative;
+  background-color: var(--purple);
+}
+
+.main-title {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 28px;
+  text-align: center;
+  color: var(--dark);
+}
+
+main {
+  width: 330px;
+  height: 440px;
+  margin: 1.5rem auto 0 auto;
+  overflow: hidden;
+  border-radius: 0.4rem;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.calculator {
+  width: 100%;
+  height: 100%;
+  padding: 3rem 1.5rem;
+  background-color: var(--dark);
+}
+
+.input-holder {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+  background-color: var(--box);
+  text-align: right;
+  padding-right: 0.75rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+}
+
+.btn-holder {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.btn-calc {
+  width: 20%;
+  height: 35px;
+  border: 1px solid var(--purple);
+  outline: none;
+  margin: 0.75rem 0;
+  border-radius: 0.3rem;
+  color: white;
+  background-color: var(--button);
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4), -1px -1px 1px rgba(255, 255, 255, 0.4);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+.btn-calc:active {
+  background-color: var(--purple);
+  color: var(--button);
+}
+
+#btn-calc-1,
+#btn-calc-18 {
+  width: 45%;
+}
+
+#btn-calc-7,
+#btn-calc-11,
+#btn-calc-15,
+#btn-calc-18 {
+  font-size: 20px;
+}
+
+#btn-calc-17 {
+  font-size: 1.5rem;
+}
+
+footer {
+  width: 100%;
+  padding: 0.5rem 0;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+/* Media Query for devices larger than 992px */
+
+@media (min-width: 992px) {
+  body {
+    padding: 3rem 0;
+  }
+}
